@@ -527,6 +527,14 @@ video {
   position: relative;
 }
 
+.top-\[60\%\]{
+  top: 60%;
+}
+
+.right-7{
+  right: 1.75rem;
+}
+
 .top-0{
   top: 0px;
 }
@@ -537,18 +545,6 @@ video {
 
 .bottom-0{
   bottom: 0px;
-}
-
-.top-\[60\%\]{
-  top: 60%;
-}
-
-.right-7{
-  right: 1.75rem;
-}
-
-.z-40{
-  z-index: 40;
 }
 
 .z-10{
@@ -563,13 +559,17 @@ video {
   z-index: 30;
 }
 
+.z-40{
+  z-index: 40;
+}
+
+.z-20{
+  z-index: 20;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.ml-\[33\%\]{
-  margin-left: 33%;
 }
 
 .mt-16{
@@ -584,6 +584,18 @@ video {
   margin-top: 3rem;
 }
 
+.ml-\[33\%\]{
+  margin-left: 33%;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
 .flex{
   display: flex;
 }
@@ -592,28 +604,28 @@ video {
   display: none;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .h-3{
   height: 0.75rem;
 }
 
-.w-full{
-  width: 100%;
+.h-full{
+  height: 100%;
 }
 
 .w-5\/6{
   width: 83.333333%;
 }
 
-.w-\[300px\]{
-  width: 300px;
-}
-
 .w-3{
   width: 0.75rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-\[300px\]{
+  width: 300px;
 }
 
 .max-w-\[400px\]{
@@ -652,16 +664,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-16{
   gap: 4rem;
 }
 
 .gap-10{
   gap: 2.5rem;
-}
-
-.gap-6{
-  gap: 1.5rem;
 }
 
 .rounded-full{
@@ -671,6 +683,16 @@ video {
 .bg-deep-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(1 0 38 / var(--tw-bg-opacity));
+}
+
+.bg-yellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 204 73 / var(--tw-bg-opacity));
+}
+
+.bg-dark-grey{
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
 }
 
 .bg-red{
@@ -683,16 +705,6 @@ video {
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
 }
 
-.bg-dark-grey{
-  --tw-bg-opacity: 1;
-  background-color: rgb(117 117 117 / var(--tw-bg-opacity));
-}
-
-.bg-yellow{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 204 73 / var(--tw-bg-opacity));
-}
-
 .p-2{
   padding: 0.5rem;
 }
@@ -701,14 +713,18 @@ video {
   padding: 3rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.text-center{
+  text-align: center;
 }
 
 .font-playfair{
@@ -732,6 +748,11 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -779,14 +800,14 @@ body,
   position: absolute;
 }
 
-.before\:top-\[-50\%\]::before{
-  content: var(--tw-content);
-  top: -50%;
-}
-
 .before\:left-\[-50\%\]::before{
   content: var(--tw-content);
   left: -50%;
+}
+
+.before\:top-\[-50\%\]::before{
+  content: var(--tw-content);
+  top: -50%;
 }
 
 .before\:-top-20::before{
@@ -799,9 +820,49 @@ body,
   left: -5rem;
 }
 
-.before\:top-20::before{
+.before\:-left-\[25px\]::before{
   content: var(--tw-content);
-  top: 5rem;
+  left: -25px;
+}
+
+.before\:-top-\[70px\]::before{
+  content: var(--tw-content);
+  top: -70px;
+}
+
+.before\:-left-\[15px\]::before{
+  content: var(--tw-content);
+  left: -15px;
+}
+
+.before\:-top-\[10px\]::before{
+  content: var(--tw-content);
+  top: -10px;
+}
+
+.before\:-top-\[90px\]::before{
+  content: var(--tw-content);
+  top: -90px;
+}
+
+.before\:-top-\[140px\]::before{
+  content: var(--tw-content);
+  top: -140px;
+}
+
+.before\:-top-\[120px\]::before{
+  content: var(--tw-content);
+  top: -120px;
+}
+
+.before\:-left-\[35px\]::before{
+  content: var(--tw-content);
+  left: -35px;
+}
+
+.before\:-top-\[125px\]::before{
+  content: var(--tw-content);
+  top: -125px;
 }
 
 .before\:z-\[-1\]::before{
@@ -876,6 +937,26 @@ body,
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (min-width: 480px){
+  .xs\:relative{
+    position: relative;
+  }
+
+  .xs\:font-semibold{
+    font-weight: 600;
+  }
+
+  .xs\:text-deep-blue{
+    --tw-text-opacity: 1;
+    color: rgb(1 0 38 / var(--tw-text-opacity));
+  }
+
+  .xs\:before\:content-brush::before{
+    --tw-content: url('./assets/brush.png');
+    content: var(--tw-content);
+  }
+}
+
 @media (min-width: 1060px){
   .md\:order-2{
     order: 2;
@@ -903,6 +984,10 @@ body,
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 
   .md\:before\:max-w-\[600px\]::before{
