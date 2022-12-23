@@ -43,9 +43,9 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jane {""}
+            LUCY {""}
             <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute  before:-left-[70px] before:-top-[115px] before:scale-75 before:z-[-1]">
-              Esper
+              NIECE
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
