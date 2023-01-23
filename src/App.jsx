@@ -15,11 +15,24 @@ function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
+  //const pages = ["home", "skills", "projects", "testimonials", "contact"];
+
   useEffect(() => {
     const handleScroll = () => {
-      //window.scrollY === 0 ? setIsTopOfPage(true) : setIsTopOfPage(false);
-      if (window.scrollY === 0) setIsTopOfPage(true);
-      if (window.scrollY !== 0) setIsTopOfPage(false);
+      window.scrollY === 0 ? setIsTopOfPage(true) : setIsTopOfPage(false);
+
+      /* pages.forEach((page) => {
+        const element = document.getElementById(page);
+        const rect = element.getBoundingClientRect();
+        rect.y < 0 && setSelectedPage(page);
+      }); */
+
+      const sections = document.querySelectorAll("section");
+      for (const section of sections) {
+        if (section.offsetTop <= window.scrollY) {
+          setSelectedPage(section.id);
+        }
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
