@@ -1223,17 +1223,17 @@ body,
 }
 
 .before\:content-person1::before {
-  --tw-content: url("assets/person-1.png");
+  --tw-content: url("./src/assets/person-1.png");
   content: var(--tw-content);
 }
 
 .before\:content-person2::before {
-  --tw-content: url("assets/person-2.png");
+  --tw-content: url("./src/assets/person-2.png");
   content: var(--tw-content);
 }
 
 .before\:content-person3::before {
-  --tw-content: url("assets/person-3.png");
+  --tw-content: url("./src/assets/person-3.png");
   content: var(--tw-content);
 }
 
@@ -1298,7 +1298,7 @@ body,
   }
 
   .xs\:before\:content-brush::before {
-    --tw-content: url("assets/brush.png");
+    --tw-content: url("./src/assets/brush.png");
     content: var(--tw-content);
   }
 }
