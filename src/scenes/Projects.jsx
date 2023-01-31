@@ -27,7 +27,7 @@ const Poject = ({ title }) => {
           eveniet. Voluptatum esse quos dolorem.
         </p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img src={`assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </m.div>
   );
 };

@@ -53,7 +53,7 @@ const Contact = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img src="assets/contact-image.jpeg" alt="contact" />
         </m.div>
         <m.div
           className="basis-1/2 mt-10 md:mt-0"
